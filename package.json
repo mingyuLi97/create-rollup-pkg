@@ -1,0 +1,23 @@
+{
+  "name": "create-rollup-pkg",
+  "version": "1.0.1",
+  "description": "基于 rollup 的组件打包模版",
+  "main": "index.js",
+  "bin": {
+    "create-rollup-pkg": "./index.js"
+  },
+  "keywords": [
+    "rollup",
+    "rollup-template",
+    "library"
+  ],
+  "author": "mingyuli1997@gmail.com",
+  "homepage": "https://github.com/mingyuLi97/create-rollup-pkg",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "2.4.2",
+    "fs-extra": "^10.1.0",
+    "prompts": "^2.4.2",
+    "validate-npm-package-name": "^5.0.0"
+  }
+}

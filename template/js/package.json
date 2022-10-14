@@ -1,0 +1,28 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "module": "",
+  "scripts": {
+    "dev": "rollup -cw",
+    "build": "rm -rf dist && rollup -c",
+    "pub:beta": "npm run build && npm version --no-git-tag-version prerelease && cnpm publish --tag beta",
+    "pub": "npm run build && npm version patch && cnpm publish"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.19.3",
+    "@babel/plugin-transform-runtime": "^7.19.1",
+    "@babel/preset-env": "^7.19.3",
+    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-commonjs": "^22.0.2",
+    "@rollup/plugin-node-resolve": "^14.1.0",
+    "rollup": "^2.79.1"
+  },
+  "dependencies": {
+    "@babel/runtime-corejs3": "^7.19.4"
+  },
+  "browserslist": "> 0.25%, not dead"
+}
